@@ -1,68 +1,269 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>酒米事業 SAKAMAI｜SoftTech</title>
-    <meta
-      name="description"
-      content="SoftTechが手がける酒米事業。日本酒「廣戸川」のための酒造好適米を、福島の大地と先端ICT技術で育てます。"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="sakamai.css" />
-  </head>
-  <body>
-    <!-- ===== HEADER ===== -->
-    <header class="site-header">
-      <div class="header-inner">
-        <h1 class="site-logo">
-          <a href="index.html">
-            <span class="logo-en">SoftTech</span>
-            <span class="logo-jp">酒米事業部</span>
-          </a>
-        </h1>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>酒米事業 SAKAMAI｜SoftTech</title>
+<meta name="description" content="SoftTechが手がける酒米事業。日本酒「廣戸川」のための酒造好適米を、福島の大地と先端ICT技術で育てます。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sakamai.css">
+</head>
+<body>
 
-        <nav class="global-nav">
-          <ul>
-            <li><a href="#about">酒米事業について</a></li>
-            <li><a href="#tanbo">田んぼづくり</a></li>
-            <li><a href="#yumenokaori">夢の香</a></li>
-            <li><a href="#ict">ICTと米づくり</a></li>
-            <li><a href="#hirotogawa">廣戸川との歩み</a></li>
-            <li><a href="index.html" class="back-link">← 会社サイトへ</a></li>
-          </ul>
-        </nav>
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <h1 class="site-logo">
+      <a href="index.html">
+        <span class="logo-en">SoftTech</span>
+        <span class="logo-jp">酒米事業部</span>
+      </a>
+    </h1>
 
-        <button class="menu-toggle" aria-label="メニュー">
-          <span></span><span></span><span></span>
-        </button>
+    <nav class="global-nav">
+      <ul>
+        <li><a href="#about">酒米事業について</a></li>
+        <li><a href="#tanbo">田んぼづくり</a></li>
+        <li><a href="#yumenokaori">夢の香</a></li>
+        <li><a href="#ict">ICTと米づくり</a></li>
+        <li><a href="#hirotogawa">廣戸川との歩み</a></li>
+        <li><a href="index.html" class="back-link">← 会社サイトへ</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-toggle" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <p class="hero-en">SAKAMAI</p>
+    <h2 class="hero-title">
+      <span>酒</span><span>米</span>
+    </h2>
+    <div class="hero-line"></div>
+    <p class="hero-sub">米を育てることは、酒を育てること。</p>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-en">ABOUT</p>
+      <h3 class="section-title">一粒の米から、<br>一献の酒へ。</h3>
+    </div>
+
+    <div class="about-body">
+      <div class="about-image about-image-main">
+        <div class="ph tall"><span>稲穂の風景</span></div>
       </div>
-    </header>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-inner">
-        <p class="hero-en">SAKAMAI</p>
-        <h2 class="hero-title"><span>酒</span><span>米</span></h2>
-        <div class="hero-line"></div>
-        <p class="hero-sub">米を育てることは、酒を育てること。</p>
+      <div class="about-text">
+        <p>SoftTechは、福島県天栄村に広がる田園地帯で、日本酒「廣戸川」のための酒米を育てています。</p>
+        <p>酒造好適米「夢の香」は、砕けやすく、繊細な米。その一粒一粒に、土の力、水の力、そして人の手が宿ります。</p>
+        <p>地域の風土と対話しながら、先人たちが受け継いできた米づくりの知恵に、私たちの得意とするICT技術を重ね合わせる。それが、SoftTechが考える「これからの酒米づくり」のかたちです。</p>
+        <p>一杯の酒の向こう側にある、田んぼの景色まで味わってもらえたら。そんな想いで、今日も稲を見つめています。</p>
       </div>
-      <div class="scroll-hint">
-        <span>Scroll</span>
-        <div class="scroll-line"></div>
-      </div>
-    </section>
 
-    <!-- ===== ABOUT ===== -->
-    <section id="about" class="about-section">
-      <div class="container">
-        <div class="section-head">
+      <div class="about-image about-image-sub">
+        <div class="ph"><span>田植え風景</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 田んぼづくり ===== -->
+<section id="tanbo" class="story-section">
+  <div class="container-wide">
+    <div class="story-row">
+      <div class="story-visual">
+        <div class="ph tall"><span>天栄村の水田</span></div>
+        <p class="story-caption">福島県天栄村 湯本地区</p>
+      </div>
+
+      <div class="story-text">
+        <p class="story-en">01 / TANBO</p>
+        <h3 class="story-title">土と水を<br>ととのえる。</h3>
+        <div class="brush-line"></div>
+        <p>標高六百メートル、奥羽山脈の伏流水が流れ込むこの土地は、昼夜の寒暖差が大きく、酒米づくりに適した稀有な環境です。</p>
+        <p>SoftTechでは、田んぼ一枚ごとに土壌の成分を分析し、最適な施肥計画を立てます。ドローンによる生育診断、センサーによる水位管理——それらはすべて、「米が一番気持ちよく育つ環境」を科学的に整えるための手段です。</p>
+        <p>機械に任せるのではなく、機械の目を借りて、人の手でととのえる。それが私たちの流儀です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 夢の香 ===== -->
+<section id="yumenokaori" class="story-section alt">
+  <div class="container-wide">
+    <div class="story-row reverse">
+      <div class="story-visual">
+        <div class="ph tall"><span>稲穂のアップ</span></div>
+        <p class="story-caption">酒造好適米「夢の香」</p>
+      </div>
+
+      <div class="story-text">
+        <p class="story-en">02 / YUMENOKAORI</p>
+        <h3 class="story-title">夢の香、<br>という選択。</h3>
+        <div class="brush-line"></div>
+        <p>「夢の香」は、平成十二年に福島県が開発した酒造好適米。耐冷性があり、心白が大きく、ふくよかな酒を醸す米として、いま多くの蔵元に選ばれています。</p>
+        <p>しかし、この米は砕けやすい。丁寧に、丁寧に扱わなければならない。だからこそ、田んぼの段階から手をかける意味があります。</p>
+        <p>私たちは、収穫後の選別・乾燥までを自社で管理。蔵元に届くその瞬間まで、米の品質に責任を持ちます。</p>
+
+        <dl class="spec-list">
+          <dt>品種</dt><dd>夢の香</dd>
+          <dt>産地</dt><dd>福島県岩瀬郡天栄村</dd>
+          <dt>精米歩合</dt><dd>40% 〜 60%（用途別）</dd>
+          <dt>作付面積</dt><dd>約 3.2 ha（2026年時点）</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ICTと米づくり ===== -->
+<section id="ict" class="story-section">
+  <div class="container-wide">
+    <div class="story-row">
+      <div class="story-visual">
+        <div class="ph tall"><span>ドローンによる圃場観察</span></div>
+        <p class="story-caption">ICTによる生育管理</p>
+      </div>
+
+      <div class="story-text">
+        <p class="story-en">03 / ICT</p>
+        <h3 class="story-title">勘と経験に、<br>数字を添える。</h3>
+        <div class="brush-line"></div>
+        <p>SoftTechの本業は、建設現場におけるICT施工です。田んぼの土を動かすのも、建設現場の土を動かすのも、その本質は変わりません。</p>
+        <p>三次元測量で田面を正確に均し、GNSSで水管理の精度を上げる。ドローンで稲の色を読み取り、病害の兆しを早期に察知する。長年の経験と、データが導く答え。その両方を大切にしています。</p>
+        <p>伝統は、守るだけでは続かない。新しい道具を受け入れながら、変えてはいけないものを見極める。それが、私たちの米づくりです。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Hirotogawa Section ===== -->
+<section id="hirotogawa" class="hirotogawa-section">
+  <div class="container">
+    <div class="hiroto-head">
+      <p class="hiroto-en">HIROTOGAWA</p>
+      <h3 class="hiroto-title">廣戸川と、<br>同じ川を見つめて。</h3>
+    </div>
+
+    <div class="hiroto-body">
+      <div class="hiroto-image">
+        <div class="ph tall"><span>酒瓶と稲穂</span></div>
+      </div>
+
+      <div class="hiroto-text">
+        <p>私たちが育てた米の多くは、天栄村の松崎酒造へと渡ります。そこで醸されるのが、日本酒「廣戸川」。</p>
+        <p>釈迦堂川のかつての名を冠したこの酒は、日常に寄り添う、ふだん使いの酒。気張らず、それでいて深い。そんな一本が生まれる背景に、私たちの田んぼがあることを、静かに誇りに思っています。</p>
+        <p>蔵元の理想と、私たちの米。そのあいだにあるのは、同じ水、同じ風、同じ土。ひとつの川の流れのように、酒米と酒は繋がっています。</p>
+        <a href="https://matsuzakisyuzo.com" class="hiroto-link" target="_blank" rel="noopener">
+          <span>松崎酒造 公式サイト</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Year Flow ===== -->
+<section class="flow-section">
+  <div class="container">
+    <div class="section-head center">
+      <p class="section-en">ANNUAL FLOW</p>
+      <h3 class="section-title">一年の、<br>米づくり。</h3>
+    </div>
+
+    <ol class="flow-list">
+      <li>
+        <span class="flow-month">4月</span>
+        <h4>種まき・育苗</h4>
+        <p>温度と湿度を記録しながら、丈夫な苗を育てます。</p>
+      </li>
+      <li>
+        <span class="flow-month">5月</span>
+        <h4>田植え</h4>
+        <p>GNSSガイダンスで株間を均一に。苗のストレスを最小限に。</p>
+      </li>
+      <li>
+        <span class="flow-month">6-7月</span>
+        <h4>生育管理</h4>
+        <p>ドローン空撮で生育ムラを可視化し、きめ細かく対処。</p>
+      </li>
+      <li>
+        <span class="flow-month">8月</span>
+        <h4>出穂・開花</h4>
+        <p>もっとも気を揉む時期。水と風を見守ります。</p>
+      </li>
+      <li>
+        <span class="flow-month">9-10月</span>
+        <h4>収穫・乾燥</h4>
+        <p>低温でゆっくり乾燥。米の芯まで丁寧に。</p>
+      </li>
+      <li>
+        <span class="flow-month">11月</span>
+        <h4>蔵入れ</h4>
+        <p>松崎酒造へ。ここから酒の物語がはじまります。</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section">
+  <div class="cta-bg"></div>
+  <div class="container">
+    <p class="cta-en">CONTACT</p>
+    <h3 class="cta-title">田んぼから、<br>酒の話をはじめませんか。</h3>
+    <p class="cta-text">酒米事業への視察、共同研究、取材のご相談、お気軽にお問い合わせください。</p>
+    <a href="#" class="cta-button">
+      <span>お問い合わせ</span>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-logo">
+      <span class="logo-en">SoftTech</span>
+      <span class="logo-jp">酒米事業部</span>
+    </div>
+
+    <div class="footer-info">
+      <p>SoftTech 株式会社</p>
+      <p>〒962-0503 福島県岩瀬郡天栄村下松本要谷 ○-○-○<br>
+      TEL: 019-XXX-XXXX ／ FAX: 019-XXX-XXXX</p>
+      <p class="footer-note">※お酒は20歳になってから。20歳未満の飲酒は法律で禁止されています。</p>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="index.html">会社サイト TOP</a>
+      <a href="#about">酒米事業について</a>
+      <a href="#">お問い合わせ</a>
+      <a href="https://matsuzakisyuzo.com" target="_blank" rel="noopener">松崎酒造</a>
+    </nav>
+
+    <small class="copyright">Copyright © SoftTech co., ltd. All rights reserved.</small>
+  </div>
+</footer>
+
+</body>
+</html>        <div class="section-head">
           <p class="section-en">ABOUT</p>
           <h3 class="section-title">一粒の米から、<br />一献の酒へ。</h3>
         </div>
