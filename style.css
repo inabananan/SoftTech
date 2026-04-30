@@ -1073,6 +1073,20 @@ ul {
   margin-right: 3px;
 }
 
+/* Match food-rice and vegetable links to sakamai style */
+.section-nav .nav-shokuyou a,
+.section-nav .nav-yasai a {
+  color: #8a6a3a;
+  font-weight: 700;
+}
+
+.section-nav .nav-shokuyou a::before,
+.section-nav .nav-yasai a::before {
+  content: "◉ ";
+  color: #8a6a3a;
+  margin-right: 3px;
+}
+
 /* =========================================
    Sakamai Teaser Block
 ========================================= */
