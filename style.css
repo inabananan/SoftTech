@@ -820,9 +820,10 @@ ul {
    Footer
 ========================================= */
 .site-footer {
-  background: #0a3d66;
+  background: rgba(10,61,102,0.86); /* 半透明にして下の背景を透けさせる */
   color: #d7e2ee;
   position: relative;
+  backdrop-filter: blur(6px);
 }
 
 .footer-top {
@@ -832,14 +833,14 @@ ul {
 
 .footer-logo a {
   display: inline-block;
-  padding: 10px 16px;
-  background: #fff;
-  color: #0a3d66;
+  padding: 0; /* 余白を削除 */
+  background: transparent; /* 白背景を削除 */
+  color: inherit;
   font-weight: 700;
-  letter-spacing: .2em;
+  letter-spacing: .05em;
   font-size: 18px;
-  border-radius: 2px;
-  margin-bottom: 28px;
+  border-radius: 0;
+  margin-bottom: 14px;
 }
 
 .footer-address {
