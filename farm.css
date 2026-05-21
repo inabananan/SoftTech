@@ -227,6 +227,7 @@ main { padding-top: 80px; }
   width: 24px;
   height: 1px;
   background: var(--c-ink);
+  transition: transform .25s, opacity .25s;
 }
 
 /* =========================================
@@ -1332,6 +1333,31 @@ main { padding-top: 80px; }
 
   .global-nav { display: none; }
   .menu-toggle { display: flex; }
+
+  .nav-open .global-nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--c-bg);
+    border-top: 1px solid var(--c-line);
+    box-shadow: 0 4px 12px rgba(26,22,19,.1);
+    z-index: 99;
+  }
+  .nav-open .global-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 0;
+  }
+  .nav-open .global-nav a {
+    display: block;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--c-line);
+  }
+  .nav-open .menu-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-open .menu-toggle span:nth-child(2) { opacity: 0; }
+  .nav-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
   .hero-title { font-size: 64px; }
   .hero-title.smaller { font-size: 48px; }

@@ -180,6 +180,7 @@ ul {
   width: 26px;
   height: 2px;
   background: #0a3d66;
+  transition: transform .25s, opacity .25s;
 }
 
 /* =========================================
@@ -440,7 +441,7 @@ ul {
 }
 
 .voice-box::before {
-  content: """;
+  content: '\201c';
   position: absolute;
   top: -6px;
   left: 22px;
@@ -1007,6 +1008,30 @@ ul {
   .global-nav { display: none; }
   .menu-toggle { display: flex; }
 
+  .nav-open .global-nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,.12);
+    z-index: 99;
+  }
+  .nav-open .global-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 0;
+  }
+  .nav-open .global-nav a {
+    display: block;
+    padding: 14px 24px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .nav-open .menu-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-open .menu-toggle span:nth-child(2) { opacity: 0; }
+  .nav-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
   .page-title h2 {
     font-size: 22px;
     flex-direction: column;
@@ -1247,7 +1272,6 @@ ul {
   }
   .teaser-text h3 { font-size: 24px; }
   .teaser-text h3::before { display: none; }
-}  overflow: hidden;
 }
 
 .ph::before {
@@ -1365,6 +1389,7 @@ ul {
   width: 26px;
   height: 2px;
   background: #0a3d66;
+  transition: transform .25s, opacity .25s;
 }
 
 /* =========================================
@@ -1625,7 +1650,7 @@ ul {
 }
 
 .voice-box::before {
-  content: """;
+  content: '\201c';
   position: absolute;
   top: -6px;
   left: 22px;
@@ -2190,6 +2215,30 @@ ul {
 
   .global-nav { display: none; }
   .menu-toggle { display: flex; }
+
+  .nav-open .global-nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,.12);
+    z-index: 99;
+  }
+  .nav-open .global-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 0;
+  }
+  .nav-open .global-nav a {
+    display: block;
+    padding: 14px 24px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .nav-open .menu-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-open .menu-toggle span:nth-child(2) { opacity: 0; }
+  .nav-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
   .page-title h2 {
     font-size: 22px;
