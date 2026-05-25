@@ -1094,6 +1094,87 @@ ul {
 }
 
 /* =========================================
+   Page Hero (Inner Page Banner)
+========================================= */
+.page-hero {
+  position: relative;
+  min-height: 280px;
+  background:
+    linear-gradient(160deg, rgba(10,61,102,.95) 0%, rgba(8,48,82,.88) 55%, rgba(4,32,58,.97) 100%),
+    linear-gradient(120deg, #6a8db0 0%, #3e6a95 50%, #244e75 100%);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+.page-hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, #e67b00 35%, #e67b00 65%, transparent 100%);
+}
+.page-hero-inner {
+  width: 100%;
+  padding: 70px 0 60px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.page-hero-eyebrow {
+  display: inline-block;
+  color: rgba(255,255,255,.62);
+  font-size: 11px;
+  letter-spacing: .2em;
+  border: 1px solid rgba(255,255,255,.25);
+  padding: 4px 14px;
+  border-radius: 2px;
+  margin-bottom: 18px;
+}
+.page-hero-en {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #e67b00;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .35em;
+  margin-bottom: 8px;
+}
+.page-hero-title {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  line-height: 1.2;
+  text-shadow: 0 2px 16px rgba(0,0,0,.3);
+  margin-bottom: 14px;
+}
+.page-hero-sub {
+  color: rgba(255,255,255,.75);
+  font-size: 15px;
+  letter-spacing: .04em;
+}
+@media (max-width: 768px) {
+  .page-hero { min-height: 200px; }
+  .page-hero-inner { padding: 50px 0 42px; }
+  .page-hero-title { font-size: 30px; }
+  .page-hero-sub { font-size: 13px; }
+}
+@media (max-width: 480px) {
+  .page-hero { min-height: 180px; }
+  .page-hero-eyebrow { display: none; }
+  .page-hero-title { font-size: 26px; }
+}
+
+/* =========================================
    Sakamai Nav Item (accent)
 ========================================= */
 .section-nav .nav-sakamai a {

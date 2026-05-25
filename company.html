@@ -40,10 +40,15 @@
   </div>
 </header>
 
-<section class="page-title">
-  <div class="container">
-    <p class="en-title">COMPANY</p>
-    <h2>会社概要<span>Company Profile</span></h2>
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="container">
+      <p class="page-hero-eyebrow">建設業許可 福島県知事許可 ｜ 創立 <span id="company-years"></span>年</p>
+      <p class="page-hero-en">COMPANY</p>
+      <h2 class="page-hero-title">会社概要</h2>
+      <p class="page-hero-sub">地域とともに歩む、誠実な経営</p>
+    </div>
   </div>
 </section>
 
@@ -253,6 +258,12 @@
   <a href="#top" class="page-top" aria-label="ページの先頭へ戻る">▲</a>
 </footer>
 
+<script>
+(function(){
+  var el = document.getElementById('company-years');
+  if(el) el.textContent = new Date().getFullYear() - 2013;
+})();
+</script>
 <script src="nav.js"></script>
 
 </body>
