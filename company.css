@@ -42,3 +42,130 @@
 @media (min-width: 1080px) {
   .company-table th { width: 240px; }
 }
+
+/* =========================================
+   会社沿革 タイムライン
+========================================= */
+.history-timeline {
+  margin-top: 10px;
+}
+
+.history-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 0;
+}
+
+.history-year {
+  padding: 20px 16px 20px 0;
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #e67b00;
+  text-align: right;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.history-content {
+  padding: 20px 0 20px 28px;
+  border-left: 2px solid #d0dce8;
+  position: relative;
+}
+
+.history-item--last .history-content {
+  border-left-color: transparent;
+  background-image: linear-gradient(to bottom, #d0dce8 0%, transparent 40%);
+  background-size: 2px 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.history-content::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 27px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #0a3d66;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #0a3d66;
+}
+
+.history-content p {
+  margin-bottom: 4px;
+  color: #444;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.history-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   免許・資格保有者 グリッド
+========================================= */
+.qualifications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.qual-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: #f5f7fa;
+  border: 1px solid #e4e9ef;
+  border-left: 4px solid #0a3d66;
+  border-radius: 3px;
+  gap: 12px;
+}
+
+.qual-name {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.qual-count {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  background: #0a3d66;
+  padding: 3px 12px;
+  border-radius: 12px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   Responsive — 会社沿革 / 資格
+========================================= */
+@media (max-width: 600px) {
+  .qualifications-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .history-item {
+    grid-template-columns: 76px 1fr;
+  }
+
+  .history-year {
+    font-size: 13px;
+    padding-right: 10px;
+  }
+
+  .history-content {
+    padding-left: 20px;
+  }
+}
