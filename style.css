@@ -122,14 +122,14 @@ ul {
 }
 
 .logo-mark {
-  display: inline-block;
-  background: #0a3d66;
-  color: #fff;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: .15em;
-  padding: 8px 12px;
-  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-mark img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .logo-sub {
@@ -926,6 +926,14 @@ ul {
   gap: 24px;
 }
 
+.sitemap-logo {
+  display: block;
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
 .sitemap-col h5 {
   font-size: 14px;
   color: #fff;
@@ -1412,14 +1420,14 @@ ul {
 }
 
 .logo-mark {
-  display: inline-block;
-  background: #0a3d66;
-  color: #fff;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: .15em;
-  padding: 8px 12px;
-  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-mark img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .logo-sub {
@@ -2213,6 +2221,14 @@ ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 24px;
+}
+
+.sitemap-logo {
+  display: block;
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  margin-bottom: 16px;
 }
 
 .sitemap-col h5 {
