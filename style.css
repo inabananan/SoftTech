@@ -132,13 +132,6 @@ ul {
   display: block;
 }
 
-.logo-sub {
-  font-size: 15px;
-  font-weight: 600;
-  color: #0a3d66;
-  letter-spacing: .05em;
-}
-
 .global-nav ul {
   display: flex;
   align-items: center;
@@ -1428,13 +1421,6 @@ ul {
   height: 40px;
   width: auto;
   display: block;
-}
-
-.logo-sub {
-  font-size: 15px;
-  font-weight: 600;
-  color: #0a3d66;
-  letter-spacing: .05em;
 }
 
 .global-nav ul {
