@@ -1137,6 +1137,65 @@ main { padding-top: 80px; }
 }
 
 /* =========================================
+   Brewery brand — logo lockup（廣戸川 / 松崎酒造）
+========================================= */
+.brand-logo-panel {
+  background: linear-gradient(160deg, #3a4630 0%, var(--c-ink) 100%);
+  border-radius: 2px;
+  padding: 56px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  min-height: 440px;
+  box-shadow: 0 20px 50px rgba(26, 22, 19, .18);
+}
+
+/* 廣戸川：白抜きの縦ロゴ → 暗いパネル上に配置 */
+.brand-logo-main {
+  height: 300px;
+  width: auto;
+  display: block;
+}
+
+.brand-logo-caption {
+  font-family: var(--font-jp);
+  font-size: 14px;
+  letter-spacing: .3em;
+  color: rgba(251, 248, 242, .75);
+  text-indent: .3em;
+}
+
+/* 品種名（福の香 / コシヒカリ）の強調 */
+.brand-rice {
+  color: var(--c-accent-deep);
+  font-weight: 600;
+}
+
+/* 松崎酒造：濃色ロゴ → 生成り背景にそのまま */
+.brand-maker {
+  margin-top: 32px;
+  padding-top: 30px;
+  border-top: 1px solid var(--c-line);
+}
+
+.brand-maker-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.brand-maker .text-link {
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .brand-logo-panel { min-height: 0; padding: 48px 32px; }
+  .brand-logo-main { height: 220px; }
+}
+
+/* =========================================
    CTA section
 ========================================= */
 .cta-section {

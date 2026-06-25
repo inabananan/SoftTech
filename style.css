@@ -114,6 +114,11 @@ ul {
   justify-content: space-between;
 }
 
+.site-logo {
+  font-size: 16px;   /* h1 の UA デフォルト 2em(≈30px) を無効化。logo-name 未適用時の巨大化を防ぐ */
+  line-height: 1;
+}
+
 .site-logo a {
   display: flex;
   align-items: center;
@@ -133,7 +138,7 @@ ul {
 }
 
 .logo-name {
-  font-size: clamp(13px, 3.4vw, 16px);
+  font-size: 16px;
   font-weight: 600;
   color: #0a3d66;
   letter-spacing: .04em;
@@ -1413,6 +1418,11 @@ ul {
   justify-content: space-between;
 }
 
+.site-logo {
+  font-size: 16px;   /* h1 の UA デフォルト 2em(≈30px) を無効化。logo-name 未適用時の巨大化を防ぐ */
+  line-height: 1;
+}
+
 .site-logo a {
   display: flex;
   align-items: center;
@@ -1432,7 +1442,7 @@ ul {
 }
 
 .logo-name {
-  font-size: clamp(13px, 3.4vw, 16px);
+  font-size: 16px;
   font-weight: 600;
   color: #0a3d66;
   letter-spacing: .04em;
