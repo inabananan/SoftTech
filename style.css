@@ -2840,3 +2840,14 @@ ul {
   .work-meta dt { padding-bottom: 4px; }
   .work-meta dd { padding-top: 8px; }
 }
+
+/* section-nav: combined farm link */
+.section-nav .nav-farm a {
+  color: #8a6a3a;
+  font-weight: 700;
+}
+.section-nav .nav-farm a::before {
+  content: "◉ ";
+  color: #8a6a3a;
+  margin-right: 3px;
+}
