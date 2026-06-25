@@ -2777,3 +2777,66 @@ ul {
   .services-grid { grid-template-columns: 1fr; }
   .works-grid { grid-template-columns: 1fr; }
 }
+
+/* =========================================
+   Works detail pages（施工実績 個別ページ）
+========================================= */
+.work-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0a6bb5;
+}
+.work-back:hover { opacity: .72; }
+
+.work-points {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+.work-points li {
+  position: relative;
+  padding: 12px 0 12px 30px;
+  border-bottom: 1px dashed #dde4ec;
+  line-height: 1.9;
+}
+.work-points li::before {
+  content: "✓";
+  position: absolute;
+  left: 2px;
+  top: 12px;
+  color: #e67b00;
+  font-weight: 700;
+}
+
+.work-meta {
+  margin: 8px 0 0;
+  border-top: 2px solid #0a3d66;
+}
+.work-meta > div {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  border-bottom: 1px solid #e3e8ee;
+}
+.work-meta dt {
+  padding: 16px 22px;
+  background: #f4f7fa;
+  color: #0a3d66;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: .04em;
+}
+.work-meta dd {
+  padding: 16px 22px;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.85;
+}
+@media (max-width: 768px) {
+  .work-meta > div { grid-template-columns: 1fr; }
+  .work-meta dt { padding-bottom: 4px; }
+  .work-meta dd { padding-top: 8px; }
+}
