@@ -1395,6 +1395,45 @@ main { padding-top: 80px; }
 
 .footer-nav a:hover { color: var(--c-white); opacity: 1; }
 
+/* 運営会社（コーポレートサイト）への動線 */
+.footer-corporate {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.footer-corporate-en {
+  font-family: var(--font-en);
+  font-size: 10px;
+  font-style: italic;
+  letter-spacing: .5em;
+  color: rgba(251,248,242,.45);
+  margin-bottom: 14px;
+}
+
+.footer-corporate-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 32px;
+  border: 1px solid rgba(251,248,242,.25);
+  color: rgba(251,248,242,.85);
+  font-size: 13px;
+  letter-spacing: .15em;
+  transition: background .3s, border-color .3s, color .3s;
+}
+
+.footer-corporate-link .arrow {
+  transition: transform .3s;
+}
+
+.footer-corporate-link:hover {
+  background: rgba(251,248,242,.08);
+  border-color: rgba(251,248,242,.5);
+  color: var(--c-white);
+}
+
+.footer-corporate-link:hover .arrow { transform: translateX(5px); }
+
 .copyright {
   display: block;
   text-align: center;
