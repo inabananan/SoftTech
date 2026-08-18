@@ -3002,3 +3002,29 @@ ul {
 
 .pillar-card .service-icon { width: 88px; height: 88px; }
 .pillar-card .service-icon svg { width: 42px; height: 42px; }
+
+/* 事業別アイコンカラー */
+.service-icon.icon-civil {
+  color: #0a6bb5;
+  background: linear-gradient(135deg, #e8f1fa 0%, #d5e7f5 100%);
+}
+
+.service-icon.icon-demolition {
+  color: #2f9fc9;
+  background: linear-gradient(135deg, #e6f6fb 0%, #d0edf7 100%);
+}
+
+.service-icon.icon-energy {
+  color: #d29a12;
+  background: linear-gradient(135deg, #fdf6e2 0%, #f8ecc4 100%);
+}
+
+.service-icon.icon-forestry {
+  color: #e67b00;
+  background: linear-gradient(135deg, #fdf1e4 0%, #f9dfc2 100%);
+}
+
+.service-icon.icon-agri {
+  color: #55923f;
+  background: linear-gradient(135deg, #eef6e9 0%, #ddeed3 100%);
+}
