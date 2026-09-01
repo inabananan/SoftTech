@@ -3028,3 +3028,340 @@ ul {
   color: #55923f;
   background: linear-gradient(135deg, #eef6e9 0%, #ddeed3 100%);
 }
+
+/* =========================================================
+   DESIGN RENEWAL 2026 — hero / cta / footer
+   （既存定義への上書き層。この下に追記しないこと）
+========================================================= */
+
+/* --- Hero: 写真主体のシンプルな構成 --- */
+.hero-section {
+  min-height: 86vh;
+  align-items: flex-end;
+  background: #071923;
+}
+
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-section::before {
+  background: linear-gradient(180deg, rgba(7,25,35,.12) 0%, rgba(7,25,35,.22) 45%, rgba(7,25,35,.74) 100%);
+}
+
+.hero-section::after { content: none; }
+
+.hero-content {
+  text-align: left;
+  padding: 150px 0 96px;
+}
+
+.hero-eyebrow {
+  display: block;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  color: rgba(255,255,255,.88);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .32em;
+  margin-bottom: 26px;
+  text-shadow: 0 1px 10px rgba(7,25,35,.5);
+}
+
+.hero-title {
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-shadow: none;
+}
+
+.hero-philosophy {
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: .3em;
+  color: rgba(255,255,255,.8);
+  margin-bottom: 14px;
+  text-shadow: 0 1px 10px rgba(7,25,35,.5);
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  letter-spacing: .06em;
+  line-height: 2.1;
+  color: rgba(255,255,255,.96);
+  margin-bottom: 0;
+  text-shadow: 0 1px 10px rgba(7,25,35,.5);
+}
+
+/* --- CTA: 余白と文字で構成 --- */
+.cta-section {
+  background: #f6f7f6;
+  padding: 96px 0;
+}
+
+.cta-section .cta-title {
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  margin-bottom: 18px;
+}
+
+.cta-subtitle { margin-bottom: 48px; }
+
+.cta-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.cta-tel-label {
+  font-size: 12px;
+  letter-spacing: .25em;
+  color: #7a8894;
+}
+
+.cta-tel {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: #0a3d66;
+}
+
+.cta-tel:hover { opacity: .7; }
+
+.cta-more {
+  margin-top: 28px;
+  font-size: 13px;
+  letter-spacing: .12em;
+  color: #0a3d66;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 4px;
+}
+
+.cta-more:hover { color: #0a6bb5; opacity: 1; }
+
+/* --- Footer: 静かに整理 --- */
+.footer-sitemap {
+  background: none;
+  padding: 72px 0 56px;
+}
+
+.sitemap-grid { gap: 40px; }
+
+.sitemap-col h5 {
+  font-size: 12px;
+  letter-spacing: .18em;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: rgba(255,255,255,.92);
+}
+
+.sitemap-col ul { gap: 10px; }
+
+.sitemap-col li a {
+  padding-left: 0;
+  font-size: 12px;
+  color: rgba(255,255,255,.55);
+  letter-spacing: .05em;
+}
+
+.sitemap-col li a::before { content: none; }
+
+.sitemap-col li a:hover { color: #fff; }
+
+.copyright {
+  background: none;
+  border-top: 1px solid rgba(255,255,255,.1);
+  padding: 26px 0;
+  font-size: 11px;
+  letter-spacing: .18em;
+  color: rgba(255,255,255,.45);
+}
+
+.page-top {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.92);
+  color: #0a3d66;
+  border: 1px solid #d7dde2;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  font-size: 11px;
+}
+
+.page-top:hover { background: #fff; color: #0a6bb5; border-color: #0a6bb5; }
+
+@media (max-width: 768px) {
+  .hero-section { min-height: 72vh; }
+  .hero-content { padding: 110px 0 64px; }
+  .hero-eyebrow { padding: 0; font-size: 10px; letter-spacing: .24em; }
+  .hero-title { font-size: 30px; letter-spacing: .1em; }
+  .cta-tel { font-size: 28px; }
+}
+
+/* --- トップ 会社概要セクション --- */
+.company-section {
+  padding: 70px 0;
+  background: #f5f7fa;
+}
+
+.company-lead {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  letter-spacing: .04em;
+  margin-bottom: 32px;
+}
+
+.company-links {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.company-links a {
+  padding: 10px 22px;
+  border: 1px solid #d5dde4;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 13px;
+  letter-spacing: .08em;
+  color: #0a3d66;
+  transition: border-color .25s, color .25s;
+}
+
+.company-links a:hover {
+  border-color: #0a6bb5;
+  color: #0a6bb5;
+}
+
+.company-more { text-align: center; }
+
+/* --- 主要事業 単一カード --- */
+.pillar-grid-single {
+  grid-template-columns: 1fr;
+  max-width: 620px;
+}
+
+/* --- 建設事業の分野 → 農業への誘導 --- */
+.agri-guide {
+  text-align: center;
+  margin-top: 44px;
+}
+
+/* --- 主要事業カードの2連アイコン --- */
+.pillar-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.pillar-icons .service-icon { margin: 0 0 18px; }
+
+/* --- 写真付きピラーカード --- */
+.pillar-card-photo {
+  padding: 0;
+  overflow: hidden;
+}
+
+.pillar-card-photo .pillar-body {
+  padding: 26px 32px 34px;
+}
+
+.pillar-photo {
+  display: grid;
+  overflow: hidden;
+}
+
+.pillar-photo img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s ease;
+}
+
+.pillar-photo-duo { grid-template-columns: 1fr 1fr; }
+
+.pillar-card-photo:hover .pillar-photo img { transform: scale(1.04); }
+
+@media (max-width: 768px) {
+  .pillar-photo img { height: 180px; }
+}
+
+/* --- 農業事業への写真バナー（service.html） --- */
+.agri-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  margin-top: 48px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.agri-banner-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.agri-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15,35,22,.38) 0%, rgba(15,35,22,.58) 100%);
+}
+
+.agri-banner-body {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 32px 24px;
+}
+
+.agri-banner-en {
+  font-size: 11px;
+  letter-spacing: .3em;
+  opacity: .85;
+  margin-bottom: 10px;
+}
+
+.agri-banner-title {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-shadow: 0 1px 10px rgba(15,35,22,.4);
+}
+
+.agri-banner-arrow {
+  transition: transform .3s ease;
+}
+
+.agri-banner:hover .agri-banner-photo { transform: scale(1.04); }
+.agri-banner:hover .agri-banner-arrow { transform: translateX(6px); }
+.agri-banner:hover { opacity: 1; }
+
+@media (max-width: 768px) {
+  .agri-banner { min-height: 150px; }
+  .agri-banner-title { font-size: 17px; }
+}
