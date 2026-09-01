@@ -75,13 +75,17 @@
 
     <!-- ===== HERO SECTION (ファーストビュー) ===== -->
     <section class="hero-section">
+      <img
+        class="hero-photo"
+        src="picture/suiden02.jpg"
+        alt=""
+        aria-hidden="true"
+      />
       <div class="hero-content">
         <div class="container">
-          <p class="hero-eyebrow">
-            土木一式工事 ｜ 解体工事 ｜ 再生可能エネルギー事業 ｜ 林業 ｜ 農業
-          </p>
+          <p class="hero-eyebrow">福島県天栄村｜建設業・農業</p>
           <h2 class="hero-title">地域を支え、<br />未来をひらく</h2>
-          <p class="hero-philosophy">— 無限に広がるみらいのために —</p>
+          <p class="hero-philosophy">無限に広がるみらいのために</p>
           <p class="hero-subtitle">
             確かな技術と誠実な施工で、<br />地域インフラとエネルギーの未来を支えます
           </p>
@@ -144,7 +148,35 @@
       </div>
     </section>
 
-    <!-- ===== SERVICES SECTION（土木／農業） ===== -->
+    <!-- ===== COMPANY SECTION ===== -->
+    <section id="company" class="company-section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="en-title">Company</span>
+          会社概要
+        </h2>
+
+        <div class="pillar-grid pillar-grid-single">
+          <a href="company.html" class="pillar-card pillar-card-photo">
+            <div class="pillar-photo">
+              <img src="picture/suiden06.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="pillar-body">
+              <p class="pillar-head">
+                <span class="domain-en">COMPANY PROFILE</span>
+              </p>
+              <h3 class="pillar-title">Softtech株式会社</h3>
+              <p class="service-desc">
+                福島県天栄村に本社を置く、建設業と農業の会社です。基本情報や沿革、免許・資格、アクセスをご紹介しています。
+              </p>
+              <span class="service-link">詳しく見る →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
     <section id="services" class="services-section">
       <div class="container">
         <h2 class="section-title">
@@ -152,30 +184,22 @@
           主要事業
         </h2>
 
-        <div class="pillar-grid">
-          <a href="service.html" class="pillar-card">
-            <p class="pillar-head">
-              <span class="domain-num">01</span>
-              <span class="domain-en">CONSTRUCTION</span>
-            </p>
-            <div class="service-icon icon-civil" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 17h20M6 17V6M18 17V6M6 6q6 8 12 0M9 17V9M12 17V10M15 17V9"/></svg></div>
-            <h3 class="pillar-title">建設業</h3>
-            <p class="service-desc">
-              造成・河川・防災・災害復旧などの土木一式工事を中心に、解体工事、再生可能エネルギー事業、林業まで、地域のインフラと環境を支えています。
-            </p>
-            <span class="service-link">詳しく見る →</span>
-          </a>
-          <a href="farm.html" class="pillar-card">
-            <p class="pillar-head">
-              <span class="domain-num">02</span>
-              <span class="domain-en">AGRICULTURE</span>
-            </p>
-            <div class="service-icon icon-agri" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20v-8.5M12 11.5C12 7.5 9.2 5.2 5.5 4.8c.4 4 2.8 6.7 6.5 6.7ZM12 10C12 6.5 14.6 4.3 18.5 4c-.3 3.6-2.6 6-6.5 6ZM4 20h16"/></svg></div>
-            <h3 class="pillar-title">農業</h3>
-            <p class="service-desc">
-              農業ブランド「ソフトファーム」として酒米・食用米・野菜を生産。土づくりの技術で安全でおいしい農産物を届けます。
-            </p>
-            <span class="service-link">詳しく見る →</span>
+        <div class="pillar-grid pillar-grid-single">
+          <a href="service.html" class="pillar-card pillar-card-photo">
+            <div class="pillar-photo pillar-photo-duo">
+              <img src="picture/works-gogan-hero.jpg" alt="" loading="lazy" />
+              <img src="picture/greenonion01.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="pillar-body">
+              <p class="pillar-head">
+                <span class="domain-en">CONSTRUCTION &amp; AGRICULTURE</span>
+              </p>
+              <h3 class="pillar-title">建設業・農業</h3>
+              <p class="service-desc">
+                土木一式工事・解体工事・再生可能エネルギー事業・林業などの建設事業を中心に、農業ブランド「ソフトファーム」として農業事業にも取り組んでいます。
+              </p>
+              <span class="service-link">詳しく見る →</span>
+            </div>
           </a>
         </div>
       </div>
@@ -188,17 +212,11 @@
         <p class="cta-subtitle">
           土木（土木一式工事・解体工事・再生可能エネルギー事業・林業）、農業に関する<br />ご相談・お問い合わせは、いつでもお気軽にお寄せください。
         </p>
-        <div class="cta-buttons">
-          <a href="tel:0248832918" class="btn btn-large btn-primary">
-            📞
-            <span class="btn-text"
-              >お電話でのお問い合わせ<br />0248-83-2918</span
-            >
-          </a>
-          <a href="service.html" class="btn btn-large btn-secondary">
-            📋 <span class="btn-text">建設事業をもっと知る</span>
-          </a>
-        </div>
+        <div class="cta-contact">
+      <p class="cta-tel-label">お電話でのお問い合わせ</p>
+      <a href="tel:0248832918" class="cta-tel">0248-83-2918</a>
+      <a href="service.html" class="cta-more">建設事業をもっと知る →</a>
+    </div>
       </div>
     </section>
 
@@ -214,6 +232,15 @@
                   alt="Softtech株式会社"
                   class="sitemap-logo"
               /></a>
+            </div>
+            <div class="sitemap-col">
+              <h5><a href="company.html">会社概要</a></h5>
+              <ul>
+                <li><a href="company.html#company-info">基本情報</a></li>
+                <li><a href="company.html#company-history">会社沿革</a></li>
+                <li><a href="company.html#company-qualifications">免許・資格</a></li>
+                <li><a href="company.html#company-access">アクセス</a></li>
+              </ul>
             </div>
             <div class="sitemap-col">
               <h5><a href="service.html">建設業</a></h5>
@@ -235,18 +262,9 @@
               <h5><a href="farm.html">農業</a></h5>
               <ul>
                 <li><a href="farm.html">ソフトファーム</a></li>
-                <li><a href="sakamai.html">酒米事業</a></li>
                 <li><a href="shokuyoumai.html">食用米事業</a></li>
+                <li><a href="sakamai.html">酒米事業</a></li>
                 <li><a href="yasai.html">野菜事業</a></li>
-              </ul>
-            </div>
-            <div class="sitemap-col">
-              <h5><a href="company.html">会社概要</a></h5>
-              <ul>
-                <li><a href="company.html#company-info">基本情報</a></li>
-                <li><a href="company.html#company-history">会社沿革</a></li>
-                <li><a href="company.html#company-qualifications">免許・資格</a></li>
-                <li><a href="company.html#company-access">アクセス</a></li>
               </ul>
             </div>
             <div class="sitemap-col">

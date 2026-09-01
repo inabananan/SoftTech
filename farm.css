@@ -351,7 +351,7 @@ main { padding-top: 80px; }
 .yasai-page .hero.hero-yasai .hero-bg {
   background-image:
     linear-gradient(180deg, rgba(26,22,19,.35) 0%, rgba(26,30,18,.62) 100%),
-    url("Picture/tenei-negi-hero.jpg");
+    url("picture/tenei-negi-hero.jpg");
   background-size: cover, cover;
   background-position: center, center 54%;
 }
@@ -1571,4 +1571,101 @@ main { padding-top: 80px; }
   .hero-title.smaller { font-size: 40px; }
   .container, .container-wide { padding: 0 20px; }
   .season-grid { grid-template-columns: 1fr; }
+}
+
+/* =========================================================
+   DESIGN RENEWAL 2026（松崎酒造を参考にした上書き層）
+========================================================= */
+
+/* Hero: 文字を絞り、映像に語らせる */
+.hero-veil {
+  background: linear-gradient(180deg, rgba(26,22,19,.22) 0%, rgba(26,22,19,.36) 55%, rgba(26,22,19,.48) 100%);
+}
+
+.hero-inner { animation: heroFade 1.8s ease both; }
+
+@keyframes heroFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero-title span { animation: none; }
+
+.hero-title.company {
+  font-size: clamp(20px, 3.2vw, 40px);
+  font-weight: 500;
+  letter-spacing: .42em;
+  text-indent: .42em;
+  margin-bottom: 24px;
+}
+
+.hero-title.smaller {
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: .4em;
+  text-indent: .4em;
+}
+
+.hero-brand-mark {
+  font-size: 10px;
+  letter-spacing: .7em;
+  text-indent: .7em;
+  opacity: .55;
+  margin-bottom: 22px;
+}
+
+.hero-line { display: none; }
+
+.hero-sub {
+  font-size: 12px;
+  letter-spacing: .5em;
+  text-indent: .5em;
+  opacity: .8;
+}
+
+/* About: 画像と本文の上下端を揃える */
+@media (min-width: 961px) {
+  .about-body { align-items: stretch; }
+  .about-text { padding-top: 0; }
+  .about-image-main .ph {
+    height: 100%;
+    aspect-ratio: auto;
+    min-height: 460px;
+  }
+}
+
+/* Philosophy: 縦書きで静かに */
+.philosophy-title {
+  writing-mode: vertical-rl;
+  display: block;
+  margin: 0 auto 48px;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: .5em;
+  line-height: 2.4;
+  min-height: 250px;
+}
+
+/* 酒米・食用米のフォトヒーロー */
+.sakamai-page .hero.hero-sakamai .hero-bg {
+  background-image:
+    linear-gradient(180deg, rgba(26,22,19,.42) 0%, rgba(26,22,19,.62) 100%),
+    url("picture/sakamai01.jpg");
+  background-size: cover, cover;
+  background-position: center, center;
+}
+
+.shokuyoumai-page .hero.hero-shokuyoumai .hero-bg {
+  background-image:
+    linear-gradient(180deg, rgba(26,22,19,.42) 0%, rgba(40,28,16,.6) 100%),
+    url("picture/syokuyoumai01.jpg");
+  background-size: cover, cover;
+  background-position: center, center 28%;
+}
+
+/* フォトヒーローの文字可読性 */
+.sakamai-page .hero-inner,
+.shokuyoumai-page .hero-inner,
+.yasai-page .hero-inner {
+  text-shadow: 0 1px 16px rgba(26,22,19,.55);
 }
